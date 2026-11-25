@@ -1,5 +1,27 @@
 # Dossiê de evidências v2 para o Service Blueprint AS-IS do atendimento ao Seguro-Desemprego pela URA da CAIXA
 
+> Nota de organização: a tabela "Tratamento da auditoria" foi posicionada no início do documento para facilitar a leitura; o conteúdo é o mesmo do final da versão original.
+
+## Tratamento da auditoria
+
+| Falha | tratamento (a/b/c) | o que mudou |
+|---|---|---|
+| **Falha 1 — rastreabilidade** | **(a) corrigir** | Todos os E001–E032 foram mantidos e passaram a apontar para URLs públicas reais; as evidências novas E033–E049 também têm URL e localização normativa/contratual sempre que aplicável. Nenhum marcador interno de ferramenta é usado como referência bibliográfica. |
+| **Falha 2 — gatilho antes da ligação** | **(a) corrigir** | O “antes” foi reconstruído: dispensa → Requerimento → janela de 7–120 dias → requerimento → primeira parcela em 30 dias → consulta. O marco do 30º dia é tratado como gatilho documentado, mas não como gatilho estatisticamente predominante. Criados J00A–J00C, E033–E034. |
+| **Falha 3 — 67 dias/devolução ao FAT** | **(a) corrigir** | Incluídos E035, J15, AO13, IT12, PF13, matriz normativa e variação específica. Corrigida também a formulação da auditoria: após 67 dias há devolução ao FAT, mas pode haver reemissão em até dois anos; não se afirma perda definitiva. |
+| **Falha 4 — Cartão do Cidadão/Senha** | **(a) corrigir** | Incluídos ED14–ED15, AO14–AO15, PF14, J13 e E037–E038/E047. A parte não confirmada da auditoria — gestão do cartão/senha pelo 0800 726 0207 — ficou explicitamente em aberto; a página atual aponta 111 para procedimentos de emissão/senha. |
+| **Falha 5 — 0800 também seria canal de requerimento** | **(b) defender** | A verificação independente não confirma a premissa da auditoria. A FAQ atual coloca o 0800 em “acompanhar situação da parcela”, não em “Onde requerer?”. Res. 957 e Carta MTE também não o preveem para requerimento. O escopo da v1 como canal de acompanhamento/consulta é preservado; E042–E043 documentam a defesa. |
+| **Falha 6 — SAC e Ouvidoria ausentes** | **(a) corrigir** | Adicionados ED16–ED17, AO16, IT10–IT11, J14, PF16 e E039. A v2 não confunde existência desses canais com transferência automática da URA; preservação de contexto permanece L23. |
+| **Falha 7 — Decreto 9.094/2017 e once-only** | **(a) corrigir** | Decreto 9.094/2017 e Lei 14.534/2023 foram incorporados à matriz normativa. PF15 e L24 conectam CPF/repetição à autenticação, mas nenhuma desconformidade da URA é afirmada sem conhecer os dados efetivamente pedidos. |
+| **Falha 8 — documento de Requerimento omitido** | **(a) corrigir** | Documento de Requerimento e CPF entram como ED12–ED13; E036 documenta a Carta de Serviços; o recebimento do documento aparece em J00A. |
+| **Falha 9 — indicador 158 de 2025** | **(a) corrigir** | Adicionado E041 e atualizado o inventário de indicadores com 1.726.914 atendimentos no 1º semestre de 2025 e 23% sobre Seguro-Desemprego. A série 2019 foi preservada, mas apenas como histórico. |
+| **Falha 10 — “síndrome do balcão” atribuída ao TCU** | **(a) corrigir** | A expressão foi retirada como citação/denominação do TCU. Mantém-se apenas o fenômeno comprovado de encaminhamento entre lugares/canais sem resolução, com E045–E046 e URL do Acórdão/notícia oficial. |
+| **Falha 11 — jornada mistura cidadão e backstage** | **(a) corrigir** | J11 foi preservado como ID, mas reescrito para a experiência observável: “aguarda e verifica se crédito/saque está efetivamente disponível”. Processamento de pagamento fica exclusivamente em AO05–AO08/AO13 e interfaces backstage. |
+
+A v2, portanto, confirma a maior parte das conclusões estruturais da v1 — existência atual do canal telefônico, mudança de remuneração contratual sem prova de extinção da URA, separação habilitação/pagamento, backstage de arquivos e pagamentos, papel da Dataprev, papel do 158 e ausência de evidência pública de gestão de caso ponta a ponta —, mas melhora substancialmente a rastreabilidade, o início da jornada, o tratamento de prazo, os meios físicos de recebimento, os canais de reclamação, a matriz normativa e a separação entre experiência do cidadão e processamento interno. As lacunas essenciais permanecem deliberadamente abertas onde a documentação pública não autoriza conclusão: árvore da URA, autenticação, integração técnica, transbordo, protocolo, compartilhamento de histórico, indicadores específicos da URA e responsável formal pela resolução interinstitucional.
+
+---
+
 ## Escopo, método e síntese executiva
 
 Esta v2 revisa integralmente o dossiê anterior à luz das onze falhas apontadas na auditoria. Os dois arquivos fornecidos — o relatório v1 e a auditoria — estavam acessíveis e foram confrontados entre si e com fontes primárias atuais. O recorte metodológico original foi preservado: a unidade de análise continua sendo **o episódio completo de atendimento relacionado à consulta de parcelas e pagamentos do Seguro-Desemprego pelo canal telefônico da CAIXA**, e não apenas a ligação; não se elabora aqui o blueprint definitivo, não se propõe TO-BE e não se priorizam antecipadamente fail points.
@@ -407,20 +429,3 @@ Na **Falha 3**, a existência do prazo de 67 dias foi confirmada, mas a consequ�
 
 Na **Falha 10**, a evidência sustenta o fenômeno que a v1 pretendia descrever, mas não a atribuição textual. O TCU afirma que trabalhadores são encaminhados de um lugar a outro sem resolver suas pendências, porém não foi localizada a expressão “síndrome do balcão”. A v2 elimina as aspas e o suposto crédito autoral ao Tribunal.
 
-## Tratamento da auditoria
-
-| Falha | tratamento (a/b/c) | o que mudou |
-|---|---|---|
-| **Falha 1 — rastreabilidade** | **(a) corrigir** | Todos os E001–E032 foram mantidos e passaram a apontar para URLs públicas reais; as evidências novas E033–E049 também têm URL e localização normativa/contratual sempre que aplicável. Nenhum marcador interno de ferramenta é usado como referência bibliográfica. |
-| **Falha 2 — gatilho antes da ligação** | **(a) corrigir** | O “antes” foi reconstruído: dispensa → Requerimento → janela de 7–120 dias → requerimento → primeira parcela em 30 dias → consulta. O marco do 30º dia é tratado como gatilho documentado, mas não como gatilho estatisticamente predominante. Criados J00A–J00C, E033–E034. |
-| **Falha 3 — 67 dias/devolução ao FAT** | **(a) corrigir** | Incluídos E035, J15, AO13, IT12, PF13, matriz normativa e variação específica. Corrigida também a formulação da auditoria: após 67 dias há devolução ao FAT, mas pode haver reemissão em até dois anos; não se afirma perda definitiva. |
-| **Falha 4 — Cartão do Cidadão/Senha** | **(a) corrigir** | Incluídos ED14–ED15, AO14–AO15, PF14, J13 e E037–E038/E047. A parte não confirmada da auditoria — gestão do cartão/senha pelo 0800 726 0207 — ficou explicitamente em aberto; a página atual aponta 111 para procedimentos de emissão/senha. |
-| **Falha 5 — 0800 também seria canal de requerimento** | **(b) defender** | A verificação independente não confirma a premissa da auditoria. A FAQ atual coloca o 0800 em “acompanhar situação da parcela”, não em “Onde requerer?”. Res. 957 e Carta MTE também não o preveem para requerimento. O escopo da v1 como canal de acompanhamento/consulta é preservado; E042–E043 documentam a defesa. |
-| **Falha 6 — SAC e Ouvidoria ausentes** | **(a) corrigir** | Adicionados ED16–ED17, AO16, IT10–IT11, J14, PF16 e E039. A v2 não confunde existência desses canais com transferência automática da URA; preservação de contexto permanece L23. |
-| **Falha 7 — Decreto 9.094/2017 e once-only** | **(a) corrigir** | Decreto 9.094/2017 e Lei 14.534/2023 foram incorporados à matriz normativa. PF15 e L24 conectam CPF/repetição à autenticação, mas nenhuma desconformidade da URA é afirmada sem conhecer os dados efetivamente pedidos. |
-| **Falha 8 — documento de Requerimento omitido** | **(a) corrigir** | Documento de Requerimento e CPF entram como ED12–ED13; E036 documenta a Carta de Serviços; o recebimento do documento aparece em J00A. |
-| **Falha 9 — indicador 158 de 2025** | **(a) corrigir** | Adicionado E041 e atualizado o inventário de indicadores com 1.726.914 atendimentos no 1º semestre de 2025 e 23% sobre Seguro-Desemprego. A série 2019 foi preservada, mas apenas como histórico. |
-| **Falha 10 — “síndrome do balcão” atribuída ao TCU** | **(a) corrigir** | A expressão foi retirada como citação/denominação do TCU. Mantém-se apenas o fenômeno comprovado de encaminhamento entre lugares/canais sem resolução, com E045–E046 e URL do Acórdão/notícia oficial. |
-| **Falha 11 — jornada mistura cidadão e backstage** | **(a) corrigir** | J11 foi preservado como ID, mas reescrito para a experiência observável: “aguarda e verifica se crédito/saque está efetivamente disponível”. Processamento de pagamento fica exclusivamente em AO05–AO08/AO13 e interfaces backstage. |
-
-A v2, portanto, confirma a maior parte das conclusões estruturais da v1 — existência atual do canal telefônico, mudança de remuneração contratual sem prova de extinção da URA, separação habilitação/pagamento, backstage de arquivos e pagamentos, papel da Dataprev, papel do 158 e ausência de evidência pública de gestão de caso ponta a ponta —, mas melhora substancialmente a rastreabilidade, o início da jornada, o tratamento de prazo, os meios físicos de recebimento, os canais de reclamação, a matriz normativa e a separação entre experiência do cidadão e processamento interno. As lacunas essenciais permanecem deliberadamente abertas onde a documentação pública não autoriza conclusão: árvore da URA, autenticação, integração técnica, transbordo, protocolo, compartilhamento de histórico, indicadores específicos da URA e responsável formal pela resolução interinstitucional.
